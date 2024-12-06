@@ -1,0 +1,106 @@
+
+## Detailed Formulas and Methodologies for Power BI Dashboard
+
+### 1. Key Formulas
+
+#### a) Total Sales
+```DAX
+Total Sales = SUM(Sales[Sales_Price_Total])
+```
+**Explanation:** Sums up the total revenue from the column `Sales_Price_Total` in the `Sales` table.
+
+#### b) Average Sales per Customer
+```DAX
+Average Sales per Customer = [Total Sales] / DISTINCTCOUNT(Customers[Customer_ID])
+```
+**Explanation:** Divides total sales by the unique number of customers (`DISTINCTCOUNT`). This formula accounts for only unique customers.
+
+#### c) Gross Profit
+```DAX
+Gross Profit = SUM(Sales[Sales_Price_Total]) - SUM(Sales[Cost_Price])
+```
+**Explanation:** Calculates profit as the difference between total sales and total cost.
+
+#### d) Profitability (%)
+```DAX
+Profitability (%) = DIVIDE([Gross Profit], [Total Sales], 0) * 100
+```
+**Explanation:** Divides gross profit by total sales and converts it to a percentage. Uses `DIVIDE` to avoid division errors.
+
+#### e) Retained Customers (Count)
+```DAX
+Retained Customers = CALCULATE(COUNT(Customers[Customer_ID]), FILTER(Customers, Customers[Status] = "Retained"))
+```
+**Explanation:** Counts the number of customers whose status is marked as "Retained."
+
+#### f) Churn Rate (%)
+```DAX
+Churn Rate (%) = DIVIDE([Lost Customers], [Total Customers]) * 100
+```
+**Explanation:** Calculates the percentage of lost customers relative to the total number of customers.
+
+#### g) Sales by Region
+```DAX
+Sales by Region = SUMX(FILTER(Sales, Sales[Region] = "Region_Name"), Sales[Sales_Price_Total])
+```
+**Explanation:** Calculates total sales for a specific region using `FILTER`.
+
+#### h) Contribution by Product (%)
+```DAX
+Product Contribution (%) = DIVIDE([Sales by Product], [Total Sales]) * 100
+```
+**Explanation:** Shows the percentage contribution of each product to the total sales.
+
+#### i) Total Customers (Dynamic)
+```DAX
+Total Customers = COUNTROWS(SUMMARIZE(Customers, Customers[Customer_ID]))
+```
+**Explanation:** Counts the number of unique customers dynamically.
+
+#### j) Cumulative Sales (YTD)
+```DAX
+Cumulative Sales = CALCULATE([Total Sales], DATESYTD(Sales[Date]))
+```
+**Explanation:** Calculates year-to-date cumulative sales using `DATESYTD`.
+
+---
+
+### 2. Methodologies Used
+
+#### a) Aggregation Techniques
+- **SUM and AVERAGE:** Used for basic aggregation of numerical values (e.g., sales, costs, profits).
+- **DISTINCTCOUNT:** Ensures unique customer or product counts for accurate metrics.
+
+#### b) Customer Retention Analysis
+- **Status Filter:** Used to segment retained, lost, and new customers.
+- **Dynamic Filters:** Drill-through and slicers enabled dynamic exploration of customer behavior.
+
+#### c) Regional and Product Analysis
+- **Slicers for Regions and Products:** Allowed filtering of sales and profitability data by specific regions or product categories.
+- **Sankey Diagrams:** Visualized the flow of sales contributions by regions and categories.
+
+#### d) Profitability Metrics
+- **Derived Columns:** Created additional calculated columns for gross profit and profitability percentage in Power BI.
+- **Dynamic Comparison:** Used drill-through to compare profitability across customer categories and regions.
+
+---
+
+### 3. Interactive Features
+- **Slicers:**
+  - Year, City, Customer Category, and Product Category slicers enabled flexible filtering.
+- **Drill-through:**
+  - Allowed users to explore granular data on sales and profitability by category or region.
+- **Tooltips:**
+  - Displayed additional insights, such as exact profit margins, on hover.
+
+---
+
+### 4. Visualizations
+- **Bar Charts:** Displayed comparisons of sales, profit, and customer counts across categories and regions.
+- **Pie Charts:** Represented the percentage distribution of retained customers.
+- **Sankey Diagrams:** Demonstrated the flow of sales between regions, customer types, and product categories.
+- **Scorecards:** Highlighted key metrics like total sales, average sales, and churn rate.
+
+---
+
+This detailed analysis includes key formulas, methodologies, and recommendations to enhance the Power BI dashboard's functionality and usability.
