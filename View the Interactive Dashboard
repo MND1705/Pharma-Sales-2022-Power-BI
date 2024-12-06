@@ -1,0 +1,25 @@
+# View the Interactive Dashboard for Pharma Sales 2022
+
+This project includes an interactive Power BI dashboard for analyzing pharmaceutical sales, customer retention, and product distribution.
+
+## View the Interactive Dashboard
+Click the link below to access the live interactive dashboard:
+
+➡️ [View Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOGM4YjI0ZDUtZWNiNC00Yjk5LWEyOTYtNjUwODRhNTYyZWQwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)  
+
+[Web](<iframe title="Analysis Pharma Sales 2022" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOGM4YjI0ZDUtZWNiNC00Yjk5LWEyOTYtNjUwODRhNTYyZWQwIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9"frameborder="0" allowFullScreen="true"></iframe>)
+
+---
+
+## Features
+- Comprehensive analysis of pharmaceutical sales.
+- Interactive filtering by year, customer category, and product category.
+- Visualization types include:
+  - Bar charts
+  - Pie charts
+  - Sankey diagrams
+- Created with Power BI Desktop and published via Power BI Service.
+
+---
+
+**Disclaimer**: The data is anonymized and for demonstration purposes only.
