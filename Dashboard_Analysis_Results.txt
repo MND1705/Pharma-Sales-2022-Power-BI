@@ -1,0 +1,65 @@
+
+## Results of Dashboard Analysis
+
+### 1. Total Sales
+- **Total Revenue:** 19.76M UAH.
+- **Key Regions by Sales Volume:**
+  - **Kyiv:** 11.26M UAH (57% of total revenue).
+  - **Kharkiv:** 2.08M UAH.
+  - **Bucha:** 1.03M UAH.
+- **Top Customer Categories:**
+  - **Foundation:** 8.85M UAH (44.8% of total sales).
+  - **Individual:** 1.08M UAH.
+  - **Medical Clinics:** 0.44M UAH.
+- **Top Product Categories by Sales:**
+  - **Consumables:** 3.02M UAH.
+  - **Equipment:** 2.17M UAH.
+
+**Conclusion:** Sales are concentrated in large regions and major customers like foundations. There is potential to expand business in other regions with lower sales volumes.
+
+### 2. Customer Retention
+- **Total Customers:** 1235.
+- **Customer Churn Rate:** High in the "Medical Companies" category (approximately 95% losses).
+- **Retention Rate by Category (%):**
+  - **Pharmacies:** 21.27%.
+  - **Medical Clinics:** 18.47%.
+  - **Dental Clinics:** 17%.
+
+**Conclusion:** Retention is strongest in pharmacies and medical clinics. However, significant losses in the "Medical Companies" category require further investigation.
+
+### 3. Profitability
+- **Average Profitability Rate:** 17.76%.
+- **Most Profitable Categories:**
+  - **Medical Clinics:** 27.34%.
+  - **Dental Clinics:** 26.35%.
+  - **Pharmacies:** 24.34%.
+- **Most Profitable Products:**
+  - **Port Systems:** 46.07%.
+  - **Infusion Systems:** 39.19%.
+
+**Conclusion:** Medical and dental clinics are the most profitable customer categories. Products like port systems significantly contribute to overall profitability.
+
+### 4. Product Distribution
+- **Highest Sales Volume:** Consumables (31 items).
+- **Top-selling category "Anesthesia"** is most popular in Kyiv and Zhytomyr.
+
+**Conclusion:** The focus is on popular products and large cities. Expanding the product range in smaller regions may increase sales volumes.
+
+### 5. Customer and Product Count
+- **Highest Customer Count:** "Individual" category with 49 customers.
+- **Medical Clinics:** Second largest customer base with 37 clients.
+- **Equipment:** Dominates sales in the consumables category.
+
+**Conclusion:** Individual customers and medical clinics form the largest customer base, providing a foundation for long-term business growth.
+
+### 6. Sankey Diagrams
+- **Sales by Customer Categories, Regions, and Products:** Sankey diagrams effectively demonstrate the connections between regions, customer types, and products.
+
+**Conclusion:** The majority of sales flow through major regions and key customers like foundations.
+
+### Overall Conclusion
+
+- Provides a comprehensive analysis of sales, profitability, and customer distribution.
+- Highlights key areas for growth, such as reducing customer churn and expanding sales in less covered regions.
+- Serves as a well-structured decision-making tool.
+
