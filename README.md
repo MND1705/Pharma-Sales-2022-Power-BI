@@ -1,4 +1,4 @@
-# Pharma-Sales-2022-Power-BI
+# Pharma Sales 2022 / Power BI
 ---
 ## **Project Overview**
 
